@@ -1,0 +1,39 @@
+@keyframes colourChange {
+    0%{fill:#30294B}
+    50%{fill:#88809E}
+    100%{fill:#30294B}
+}
+
+@keyframes background-gradient {
+    0% {
+        background-color: #30294B;
+    }
+    50% { 
+        background-color: #E8454E;
+    }
+    100% {
+        background-color: #30294B;
+    }
+}
+ 
+@keyframes sunChange {
+    0% {fill:#F1AC69}
+    50% {fill: #E97737}
+    100% {fill:#F1AC69}
+}
+
+.cloud {
+    animation: colourChange 10s infinite;
+}
+
+.sun {
+    animation: sunChange 10s infinite;
+}
+
+body {
+    /* background: radial-gradient(#30294B, #A9A19F ); */
+    animation: background-gradient 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-image: radial-gradient(circle at center, transparent, #A9A19F );
+}
